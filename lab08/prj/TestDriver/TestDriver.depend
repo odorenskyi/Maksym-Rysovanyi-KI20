@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1616451542 source:c:\dorenskyi\maksym-rysovanyi-ki20\lab08\prj\testdriver\main.cpp
+1616455142 source:c:\dorenskyi\maksym-rysovanyi-ki20\lab08\prj\testdriver\main.cpp
 	<iostream>
 	"ModulesRisovany.h"
 

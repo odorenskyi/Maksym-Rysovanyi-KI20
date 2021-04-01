@@ -1,5 +1,6 @@
 # depslib dependency file v1.0
-1616585501 source:c:\dorenskyi\maksym-rysovanyi-ki20\lab08\prj\Рисований_task\main.cpp
+1617271714 source:c:\dorenskyi\maksym-rysovanyi-ki20\lab08\prj\Рисований_task\main.cpp
 	<iostream>
 	"ModulesRisovany.h"
+	<windows.h>
 

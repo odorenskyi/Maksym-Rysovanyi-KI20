@@ -1,17 +1,18 @@
 #include <iostream>
 #include "ModulesRisovany.h"
+#include <windows.h>
 
 using namespace std;
 
 void copyright()
 {
-    cout << "Risovaniy Maxim. CNTU 2021. ©";
+    cout << "Risovaniy Maxim. CNTU 2021. (c)";
 }
 void expression(char a, char b, bool result)
 {
-    cout << "”вед≥ть a: ";
+    cout << "”ведiть a: ";
     cin >> a;
-    cout << "”вед≥ть b: ";
+    cout << "”ведiть b: ";
     cin >> b;
     if(a <= b - 32)
     {
@@ -26,20 +27,20 @@ void expression(char a, char b, bool result)
 
 void func(int x, int y, int res)
 {
-    cout << "”вед≥ть число x: ";
+    cout << "”ведiть число x: ";
     cin >> x;
-    cout << "”вед≥ть число y: ";
+    cout << "”ведiть число y: ";
     cin >> y;
-    cout << "„исла x та y у ш≥стнадц€ков≥й систем≥ численн€: " << hex << x << "  " << hex << y << endl;
-    cout << "„исла x та y у дес€тков≥й систем≥ численн€: " << dec << x << "  " << dec << y << endl;
+    cout << "„исла x та y у шiстнадц€ков≥й системi численн€: " << hex << x << "  " << hex << y << endl;
+    cout << "„исла x та y у дес€тковiй системi численн€: " << dec << x << "  " << dec << y << endl;
     res = s_calculation(x,y);
-    cout << "–езультат у дес€тков≥й cистем≥: " << dec << res << endl;
-    cout << "–езультат у ш≥стнадц€тков≥й систем≥: " << hex << res << endl;
+    cout << "–езультат у дес€тковiй cистемi: " << dec << res << endl;
+    cout << "–езультат у ш≥стнадц€тковiй системi: " << hex << res << endl;
 }
 
 int main()
 {
-    system("chcp 1251 & cls");
+    setlocale(LC_ALL, "");
     copyright();
     char a;
     char b;
