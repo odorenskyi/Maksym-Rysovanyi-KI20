@@ -6,9 +6,9 @@
 
 using namespace std;
 
-    float x = 0;
-    float y = 0;
-    float res = 0;
+    int x = 0;
+    int y = 0;
+    int res = 0;
 
 void copyright()
 {
@@ -30,23 +30,23 @@ void expression(char a, char b, bool result)
     cout << "Result: " << result;
 }
 
-void func(float x, float y, float res)
+void func(int x, int y, int res)
 {
     while(x < 1)
     {
         cout << "”ведiть число x, €ке бiльше за 1: ";
         cin >> x;
     }
-    while(y < 3.15)
+    while(y <= 4)
     {
-        cout << "”ведiть число y, €ке бiльше за число PI: ";
+        cout << "”ведiть число y, €ке бiльше 4: ";
         cin >> y;
     }
-    cout << "„исла x та y у шiстнадц€ковiй системi численн€: " << hexfloat << x << "  " << hexfloat << y << endl;
-    cout << "„исла x та y у дес€тковiй системi численн€: " << defaultfloat << x << "  " << defaultfloat << y << endl;
+    cout << "„исла x та y у шiстнадц€ковiй системi численн€: " << hex << x << "  " << hex << y << endl;
+    cout << "„исла x та y у дес€тковiй системi численн€: " << dec << x << "  " << dec << y << endl;
     res = s_calculation(x,y);
-    cout << "–езультат у дес€тковiй cистемi: " << defaultfloat << res << endl;
-    cout << "–езультат у шiстнадц€тковiй системi: " << hexfloat << res << endl;
+    cout << "–езультат у дес€тковiй cистемi: " << dec << res << endl;
+    cout << "–езультат у шiстнадц€тковiй системi: " << hex << res << endl;
 }
 
 int main()
