@@ -6,6 +6,10 @@
 
 using namespace std;
 
+    float x = 0;
+    float y = 0;
+    float res = 0;
+
 void copyright()
 {
     cout << "Risovaniy Maxim. CNTU 2021. (c)";
@@ -23,31 +27,20 @@ void expression(char a, char b, bool result)
     else{
         result = 0;
     }
-    // cout << a << endl << b << endl;
     cout << "Result: " << result;
 }
 
 void func(float x, float y, float res)
 {
-    cout << "”ведiть число x: ";
-    cin >> x;
-    if(x < 0 || cin.fail())
+    while(x < 1)
     {
-        cout << "”ведiть цiле натуральне число!" << endl;
-        system("pause");
-        getchar();
-        getchar();
-        exit(0);
+        cout << "”ведiть число x, €ке бiльше за 1: ";
+        cin >> x;
     }
-    cout << "”ведiть число y: ";
-    cin >> y;
-    if(y < 3.15 || cin.fail())
+    while(y < 3.15)
     {
-        cout << "”ведiть цiле натуральне число та €ке бiльше числа PI!" << endl;
-        system("pause");
-        getchar();
-        getchar();
-        exit(0);
+        cout << "”ведiть число y, €ке бiльше за число PI: ";
+        cin >> y;
     }
     cout << "„исла x та y у шiстнадц€ковiй системi численн€: " << hexfloat << x << "  " << hexfloat << y << endl;
     cout << "„исла x та y у дес€тковiй системi численн€: " << defaultfloat << x << "  " << defaultfloat << y << endl;
@@ -62,9 +55,6 @@ int main()
     copyright();
     char a;
     char b;
-    int x = 0;
-    int y = 0;
-    int res = 0;
     bool result;
     cout << endl;
     expression(a,b,result);
