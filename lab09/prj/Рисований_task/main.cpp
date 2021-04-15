@@ -3,10 +3,8 @@
 
 using namespace std;
 
-double x = 0;
 int x_s = 0;
 int y_s = 0;
-double res = 0;
 int N = 0;
 int res_2 = 0;
 
@@ -16,6 +14,8 @@ void copyright()
 }
 void electro()
 {
+    double x = 0;
+    double res = 0;
     while(x < 1)
     {
         cout << "Уведiть кiлькiсть спожитої за мiсяць електроенергiї(число бiльше за 1): ";
@@ -30,10 +30,25 @@ void tempCF()
     float arrTemp[12];
     for(int i = 0; i < 12; i++)
     {
-        cout << "Уведiть температуру за " << i + 1 << " мiсяць: ";
-        cin >> arrTemp[i];
+        while(true)
+        {
+            cout << "Уведiть температуру за " << i + 1 << " мiсяць (вiд -100 до 100): ";
+        if(!(scanf("%f", &arrTemp[i])))
+        {
+            scanf("%*[^\n]");
+            cout << "Уведiть число, а не символ!" << endl;
+            continue;
+        }
+        if(arrTemp[i] >= -100.0 && arrTemp[i] <= 100.0)
+        {
+            break;
+        }
+        else
+        {
+            cout << "Невiрно введенi данi!" << endl;
+        }
+        }
     }
-
     cout << endl;
 
     cout << "Середньорiчна температура за Цельсiєм: " << temperature_1(arrTemp) << endl;
@@ -48,7 +63,7 @@ void bit_task()
         cin >> N;
         if(N >= 0 && N <= 5740500)
         {
-            cout << bit_operation(N) << endl;
+            cout << dec << bit_operation(N) << endl;
             break;
         }
     }
@@ -58,7 +73,7 @@ int main()
 {
     setlocale(LC_ALL, "");
     copyright();
-
+    float arrTemp[12];
     char input = 0;
     while(true)
     {
