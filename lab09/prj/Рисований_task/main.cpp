@@ -14,7 +14,7 @@ void copyright()
 }
 void electro()
 {
-    double x = 0;
+    int x = 0;
     double res = 0;
     while(x < 1)
     {
@@ -22,7 +22,7 @@ void electro()
         cin >> x;
     }
     res = electricity(x);
-    cout << "Результат: " << res/100 << endl;
+    cout << "Результат: " << res/100 << " гривень." << endl;
 }
 
 void tempCF()
