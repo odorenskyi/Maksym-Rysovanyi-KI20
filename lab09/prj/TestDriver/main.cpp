@@ -8,25 +8,21 @@ int main()
 {
     cout << "Task9_1 [TestDriver]" << endl;
     int a[5] = {100, 150, 175, 155, 805};
-    double res[5] = {13084.3, 19626.45, 42340.38, 37501.48, 429907.84};
+    int res[5] = {13084, 19626, 25674, 20835, 179560};
     int b = 0;
-    double b1 = 0;
+    int b1 = 0;
     int c = 0;
-    double c1 = 0;
+    int c1 = 0;
     for(int i = 0; i < 5; i++)
     {
-        b = electricity(a[i]);
-        b1 = b;
-        c = round(res[i]*100);
-        c1 = c;
-        if(b == c)
+        if(electricity(a[i]) == res[i])
         {
-            cout << "Passed! Your testing result = " << c1/100 << endl;
+            cout << "Passed! Your testing result = " << res[i] << endl;
         }
-        if(b != c)
+        if(electricity(a[i]) != res[i])
         {
-            cout << "Test Res - " << b1/100 << endl;
-            cout << "Failed! Your testing result != " << c1/100 << endl;
+            cout << "Test Res - " << res[i] << endl;
+            cout << "Failed! Your testing result != " << electricity(a[i])  << endl;
         }
     }
     cout << endl;
