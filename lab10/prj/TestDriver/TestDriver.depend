@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1620913434 source:c:\dorenskyi\maksym-rysovanyi-ki20\lab10\prj\testdriver\main.cpp
+	<iostream>
+	<string>
+	<sstream>
+	<fstream>
+	<ctime>
+	"ModulesRisovany.h"
+
