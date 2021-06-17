@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1623923655 source:c:\dorenskyi\maksym-rysovanyi-ki20\lab11\prj\Рисований_task\main.cpp
+	<iostream>
+	<vector>
+	<fstream>
+	<windows.h>
+	<clocale>
+	<string>
+
